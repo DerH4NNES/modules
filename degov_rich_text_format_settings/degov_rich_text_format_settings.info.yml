@@ -12,6 +12,5 @@ dependencies:
   - image
   - linkit
   - media
-  - media_entity
   - node
   - spamspan

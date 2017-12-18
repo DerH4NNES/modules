@@ -13,7 +13,6 @@ dependencies:
   - image
   - language
   - media
-  - media_entity
   - path
   - text
   - user

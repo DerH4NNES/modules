@@ -16,7 +16,6 @@ dependencies:
   - file
   - language
   - media
-  - media_entity
   - paragraphs
   - path
   - taxonomy

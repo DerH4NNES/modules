@@ -13,7 +13,6 @@ dependencies:
   - image
   - language
   - media
-  - media_entity
   - media_entity_generic
   - path
   - taxonomy

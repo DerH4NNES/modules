@@ -9,6 +9,6 @@ dependencies:
   - entity_browser
   - field
   - link
-  - media_entity
+  - media
   - paragraphs
   - workbench_moderation

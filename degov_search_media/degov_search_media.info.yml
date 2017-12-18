@@ -6,7 +6,7 @@ package: deGov
 dependencies:
   - block
   - degov_search_base
-  - media_entity
+  - media
   - system
   - user
   - views

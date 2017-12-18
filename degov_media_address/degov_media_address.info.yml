@@ -18,7 +18,6 @@ dependencies:
   - language
   - lightning_core
   - media
-  - media_entity
   - media_entity_generic
   - path
   - spamspan

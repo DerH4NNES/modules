@@ -16,7 +16,7 @@ deGov | Modul |  Kompatibilität: 8.x
   - file
   - image
   - language
-  - media_entity
+  - media
   - taxonomy
   - user
   - workbench_moderation

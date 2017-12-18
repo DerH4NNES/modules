@@ -19,7 +19,7 @@ deGov | Modul |  Kompatibilität: 8.x
   - geofield
   - language
   - lightning_core
-  - media_entity
+  - media
   - path
   - spamspan
   - styled_google_map

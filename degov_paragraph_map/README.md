@@ -12,7 +12,7 @@ deGov | Modul |  Kompatibilität: 8.x
   - entity_reference_display
   - field
   - link
-  - media_entity
+  - media
   - options
   - paragraphs
   - workbench_moderation

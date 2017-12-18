@@ -74,7 +74,7 @@ class MediaFormAlter extends \Drupal\entity_reference_integrity_enforce\FormAlte
    */
   public function formAlter(&$form, FormStateInterface $form_state, $form_id) {
     $this->entityInfo = $this->tempStoreFactory->get('media_multiple_delete_confirm')->get($this->currentUser->id());
-    /** @var \Drupal\media_entity\MediaInterface[] $entities */
+    /** @var \Drupal\media\MediaInterface[] $entities */
     $entities = $this->storage->loadMultiple(array_keys($this->entityInfo));
     foreach ($entities as $entity) {
       if (in_array($entity->getEntityTypeId(), $this->enabledEntityTypeIds, TRUE) && $this->dependencyManager->hasDependents($entity)) {

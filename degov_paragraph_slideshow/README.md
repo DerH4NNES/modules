@@ -13,7 +13,7 @@ deGov | Modul |  Kompatibilität: 8.x
   - field
   - inline_entity_form
   - link
-  - media_entity
+  - media
   - options
   - paragraphs
   - text

@@ -12,7 +12,7 @@ deGov | Modul |  Kompatibilität: 8.x
   - field_group
   - lightning_core
   - link
-  - media_entity
+  - media
   - node
   - paragraphs
   - paragraphs_edit

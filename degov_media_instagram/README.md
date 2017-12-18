@@ -12,7 +12,7 @@ deGov | Modul |  Kompatibilität: 8.x
   - entity_browser
   - field
   - image
-  - media_entity
+  - media
   - media_entity_instagram
   - path
   - taxonomy

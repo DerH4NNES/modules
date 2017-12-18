@@ -1,6 +1,6 @@
 <?php
 
-use Drupal\media_entity\MediaInterface;
+use Drupal\media\MediaInterface;
 use Drupal\Component\Utility\Xss;
 use Symfony\Component\Yaml\Yaml;
 use Drupal\Component\Utility\NestedArray;
@@ -85,7 +85,7 @@ function degov_social_media_settings_modules_installed($modules) {
 function degov_social_media_settings_preprocess_paragraph__media_reference(&$variables) {
   /** @var \Drupal\paragraphs\ParagraphInterface $paragraph */
   $paragraph = $variables['paragraph'];
-  /** @var \Drupal\media_entity\MediaInterface $media */
+  /** @var \Drupal\media\MediaInterface $media */
   $media = $paragraph->field_media_reference_media->entity;
 
   // Add a class to the paragraph template for external media.
@@ -98,7 +98,7 @@ function degov_social_media_settings_preprocess_paragraph__media_reference(&$var
  * Implements hook_preprocess_media().
  */
 function degov_social_media_settings_preprocess_media(&$variables) {
-  /** @var \Drupal\media_entity\MediaInterface $media */
+  /** @var \Drupal\media\MediaInterface $media */
   $media = $variables['elements']['#media'];
   $entity_id = $media->id();
   $bundle = $media->bundle();

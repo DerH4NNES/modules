@@ -11,7 +11,7 @@ deGov | Modul |  Kompatibilität: 8.x
   - entity_browser
   - field
   - link
-  - media_entity
+  - media
   - paragraphs
   - workbench_moderation
 

@@ -30,7 +30,7 @@ function degov_media_video_post_update_migrate_field_title(&$sandbox) {
     ->condition('bundle', 'video')
     ->range($sandbox['current'], $sandbox['current'] + $media_per_batch)
     ->execute();
-  $medias = \Drupal\media_entity\Entity\Media::loadMultiple($mids);
+  $medias = \Drupal\media\Entity\Media::loadMultiple($mids);
   foreach($medias as $media) {
     $caption = $media->get('field_video_caption')->getValue();
     $media->set('field_title', $caption);

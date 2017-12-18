@@ -13,7 +13,7 @@ deGov | Modul |  Kompatibilität: 8.x
   - field
   - image
   - language
-  - media_entity
+  - media
   - taxonomy
   - video_embed_field
   - video_embed_media

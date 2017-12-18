@@ -22,7 +22,7 @@ function degov_media_address_preprocess_media__address(&$variables) {
   if (!empty($variables['elements']['#view_mode'])
     && ($variables['elements']['#view_mode'] == 'osm_map' )) {
     $address = $variables['elements']['#media'];
-    if ($address instanceof \Drupal\media_entity\MediaInterface) {
+    if ($address instanceof \Drupal\media\MediaInterface) {
       $location = $address->get('field_address_location');
       if (!$location->isEmpty()) {
         // Assign the unique ID for every map paragraph we have.

@@ -16,8 +16,7 @@ deGov | Modul |  Kompatibilität: 8.x
   - image
   - language
   - lightning_media
-  - media_entity
-  - media_entity_image
+  - media
   - taxonomy
   - text
   - workbench_moderation

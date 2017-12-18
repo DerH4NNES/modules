@@ -16,7 +16,7 @@ function degov_media_audio_uninstall() {
   $dependencies = \Drupal::config('entity_browser.browser.media_browser')
     ->get('dependencies.config');
   foreach ($dependencies as $key => $dependency) {
-    if ($dependency == 'media_entity.bundle.audio') {
+    if ($dependency == 'media.type.audio') {
       unset($dependencies[$key]);
     }
   }

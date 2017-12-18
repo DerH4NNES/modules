@@ -30,7 +30,7 @@ function degov_media_gallery_post_update_migrate_field_title(&$sandbox) {
     ->condition('bundle', 'gallery')
     ->range($sandbox['current'], $sandbox['current'] + $media_per_batch)
     ->execute();
-  $medias = \Drupal\media_entity\Entity\Media::loadMultiple($mids);
+  $medias = \Drupal\media\Entity\Media::loadMultiple($mids);
   foreach($medias as $media) {
     if ($media->get('field_gallery_title')->isEmpty()) {
       $sandbox['current']++;

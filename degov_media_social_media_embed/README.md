@@ -13,7 +13,7 @@ deGov | Modul |  Kompatibilität: 8.x
   - field
   - field_group
   - language
-  - media_entity
+  - media
   - path
   - taxonomy
   - text

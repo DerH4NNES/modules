@@ -8,7 +8,7 @@ use Drupal\degov_common\MediaFormAlter;
 use Drupal\degov_common\Plugin\views\filter\DegovBundle;
 use Drupal\field\Entity\FieldConfig;
 use Drupal\field\Entity\FieldStorageConfig;
-use Drupal\media_entity\MediaInterface;
+use Drupal\media\MediaInterface;
 use Drupal\node\NodeInterface;
 
 /**
@@ -134,7 +134,7 @@ function degov_common_preprocess_node(&$variables) {
  * Implements hook_ENTITY_TYPE_view_alter() for media entities.
  *
  * @param array $build
- * @param \Drupal\media_entity\MediaInterface $entity
+ * @param \Drupal\media\MediaInterface $entity
  * @param \Drupal\Core\Entity\Display\EntityViewDisplayInterface $display
  */
 function degov_common_media_view_alter(array &$build, MediaInterface $entity, EntityViewDisplayInterface $display) {
@@ -274,7 +274,7 @@ function degov_common_entity_type_alter(array &$entity_types) {
  * @return mixed
  */
 function degov_media_label_callback($entity) {
-  if ($entity instanceof \Drupal\media_entity\Entity\Media) {
+  if ($entity instanceof \Drupal\media\Entity\Media) {
     if ($entity->hasField('field_title') && !$entity->get('field_title')->isEmpty()) {
       return $entity->get('field_title')->value;
     }

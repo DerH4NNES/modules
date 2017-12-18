@@ -9,7 +9,7 @@ deGov | Modul |  Kompatibilität: 8.x
   - degov_content_types_shared_fields
   - entity_browser
   - field
-  - media_entity
+  - media
   - paragraphs
   - text
   - workbench_moderation

@@ -11,8 +11,7 @@ deGov | Modul |  Kompatibilität: 8.x
   - degov_taxonomy_term_tags
   - field
   - file
-  - media_entity
-  - media_entity_document
+  - media
   - taxonomy
   - workbench_moderation
   - dropzonejs_eb_widget

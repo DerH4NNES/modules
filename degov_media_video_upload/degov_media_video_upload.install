@@ -8,7 +8,7 @@ function degov_media_video_upload_uninstall() {
   $dependencies = \Drupal::config('entity_browser.browser.media_browser')
     ->get('dependencies.config');
   foreach ($dependencies as $key => $dependency) {
-    if ($dependency == 'media_entity.bundle.video_upload') {
+    if ($dependency == 'media.type.video_upload') {
       unset($dependencies[$key]);
     }
   }

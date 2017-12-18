@@ -14,7 +14,7 @@ deGov | Modul |  Kompatibilität: 8.x
   - field_group
   - image
   - language
-  - media_entity
+  - media
   - path
   - text
   - user

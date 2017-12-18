@@ -6,7 +6,7 @@ namespace Drupal\degov_common;
 use DateInterval;
 use Drupal\Core\File\FileSystem;
 use Drupal\Core\Logger\LoggerChannelFactoryInterface;
-use Drupal\media_entity\Entity\Media;
+use Drupal\media\Entity\Media;
 use Drupal\video_embed_field\ProviderManager;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Exception\ClientException;

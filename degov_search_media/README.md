@@ -8,7 +8,7 @@ deGov | Modul |  Kompatibilität: 8.x
 #####Abhängigkeiten:
   - block
   - degov_search_base
-  - media_entity
+  - media
   - system
   - user
   - views

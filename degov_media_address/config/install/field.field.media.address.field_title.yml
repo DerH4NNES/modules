@@ -3,11 +3,10 @@ status: true
 dependencies:
   config:
     - field.storage.media.field_title
-    - media_entity.bundle.address
+    - media.type.address
   enforced:
     module:
       - degov_media_address
-third_party_settings: {  }
 id: media.address.field_title
 field_name: field_title
 entity_type: media

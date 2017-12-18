@@ -2,6 +2,7 @@ langcode: de
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.preview
     - field.field.media.contact.field_contact_email
     - field.field.media.contact.field_contact_fax
     - field.field.media.contact.field_contact_image
@@ -14,14 +15,13 @@ dependencies:
     - field.field.media.contact.field_title
     - image.style.large
     - image.style.thumbnail
-    - media_entity.bundle.contact
+    - media.type.contact
   enforced:
     module:
       - degov_media_contact
   module:
-    - degov_common
     - image
-    - media_entity
+    - media
 id: media.contact.preview
 targetEntityType: media
 bundle: contact

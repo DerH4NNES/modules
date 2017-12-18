@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - field.storage.media.field_copyright
-    - media_entity.bundle.audio
+    - media.type.audio
     - taxonomy.vocabulary.copyright
   enforced:
     module:

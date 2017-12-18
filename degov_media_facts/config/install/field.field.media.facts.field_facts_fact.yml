@@ -3,11 +3,10 @@ status: true
 dependencies:
   config:
     - field.storage.media.field_facts_fact
-    - media_entity.bundle.facts
+    - media.type.facts
   enforced:
     module:
       - degov_media_facts
-third_party_settings: {  }
 id: media.facts.field_facts_fact
 field_name: field_facts_fact
 entity_type: media

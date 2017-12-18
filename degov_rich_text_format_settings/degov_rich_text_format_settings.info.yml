@@ -9,7 +9,9 @@ dependencies:
   - embed
   - entity_embed
   - filter
+  - image
   - linkit
+  - media
   - media_entity
   - node
   - spamspan

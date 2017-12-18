@@ -3,10 +3,7 @@ status: true
 dependencies:
   config:
     - field.storage.media.field_media_duration
-    - media_entity.bundle.audio
-  endforced:
-    module:
-      - degov_media_audio
+    - media.type.audio
 id: media.audio.field_media_duration
 field_name: field_media_duration
 entity_type: media

@@ -2,20 +2,21 @@ langcode: de
 status: true
 dependencies:
   config:
-    - entity_browser.browser.media_browser
     - field.field.media.facts.field_facts_fact
     - field.field.media.facts.field_facts_image
     - field.field.media.facts.field_facts_text
+    - field.field.media.facts.field_media_generic_4
     - field.field.media.facts.field_media_in_library
     - field.field.media.facts.field_title
-    - media_entity.bundle.facts
-  module:
-    - entity_browser
-    - field_group
-    - text
+    - media.type.facts
   enforced:
     module:
       - degov_media_facts
+  module:
+    - field_group
+    - path
+    - text
+    - workbench_moderation
 third_party_settings:
   field_group:
     group_vertical:
@@ -75,20 +76,6 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_facts_image:
-    type: entity_browser_entity_reference
-    weight: 21
-    settings:
-      entity_browser: media_browser
-      field_widget_display: rendered_entity
-      field_widget_edit: true
-      field_widget_remove: true
-      selection_mode: selection_append
-      field_widget_display_settings:
-        view_mode: thumbnail
-      open: true
-    region: content
-    third_party_settings: {  }
   field_facts_text:
     weight: 22
     settings:
@@ -116,7 +103,8 @@ content:
     type: language_select
     weight: 25
     region: content
-    settings: {  }
+    settings:
+      include_locked: true
     third_party_settings: {  }
   name:
     type: string_textfield
@@ -126,6 +114,21 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 100
+    region: content
+    third_party_settings: {  }
 hidden:
   created: true
+  field_facts_image: true
+  field_media_generic_4: true
   uid: true

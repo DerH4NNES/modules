@@ -1,9 +1,12 @@
 langcode: de
 status: true
 dependencies:
+  content:
+    - 'file:file:ff8a21d3-04cb-4aa4-af05-8e28b3650f04'
   module:
     - entity_embed
-    - media_entity
+    - image
+    - media
 label: 'Media browser'
 id: media_browser
 type_id: entity
@@ -11,8 +14,10 @@ type_settings:
   entity_type: media
   bundles: {  }
   display_plugins:
-    - 'entity_reference:media_thumbnail'
-  entity_browser: media_browser
+    - 'entity_reference:entity_reference_entity_view'
+    - media_image
+    - 'view_mode:media.embedded'
+  entity_browser: ckeditor_media_browser
   entity_browser_settings:
     display_review: false
-icon_uuid: 45927269-657e-487b-9fd4-ca7071cb6510
+icon_uuid: ff8a21d3-04cb-4aa4-af05-8e28b3650f04

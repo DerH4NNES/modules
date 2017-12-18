@@ -4,11 +4,14 @@ dependencies:
   enforced:
     module:
       - degov_media_address
+  module:
+    - media_entity_generic
 id: address
 label: Adresse
 description: 'Ein Media-Bundle für Adressen.'
-type: generic
+source: generic
 queue_thumbnail_downloads: false
 new_revision: false
-type_configuration: {  }
+source_configuration:
+  source_field: field_media_generic
 field_map: {  }

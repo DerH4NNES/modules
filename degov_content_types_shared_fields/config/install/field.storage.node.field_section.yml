@@ -1,12 +1,12 @@
 langcode: de
 status: true
 dependencies:
-  module:
-    - node
-    - taxonomy
   enforced:
     module:
       - degov_content_types_shared_fields
+  module:
+    - node
+    - taxonomy
 id: node.field_section
 field_name: field_section
 entity_type: node

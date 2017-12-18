@@ -5,7 +5,7 @@ dependencies:
     module:
       - degov_content_types_shared_fields
   module:
-    - media_entity
+    - media
 id: media.field_include_search
 field_name: field_include_search
 entity_type: media

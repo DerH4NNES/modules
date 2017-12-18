@@ -24,7 +24,7 @@ settings:
         -
           name: Linking
           items:
-            - Linkit
+            - DrupalLink
             - DrupalUnlink
         -
           name: Lists
@@ -47,27 +47,11 @@ settings:
           items:
             - ShowBlocks
             - Source
-            - SpecialChar
-        -
-          name: Copy-Paste
-          items:
-            - Cut
-            - Copy
-            - Paste
-            - PasteText
-            - PasteFromWord
-        -
-          name: Aktion
-          items:
-            - Undo
-            - Redo
   plugins:
-    stylescombo:
-      styles: ''
     language:
       language_list: un
-    linkit:
-      linkit_profile: full_text
+    stylescombo:
+      styles: ''
 image_upload:
   status: true
   scheme: public

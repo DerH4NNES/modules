@@ -1,12 +1,12 @@
 langcode: de
 status: true
 dependencies:
-  module:
-    - media_entity
-    - text
   enforced:
     module:
       - degov_content_types_shared_fields
+  module:
+    - media
+    - text
 id: media.field_media_transcription
 field_name: field_media_transcription
 entity_type: media

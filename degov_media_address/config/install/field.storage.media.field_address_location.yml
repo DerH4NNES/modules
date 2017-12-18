@@ -6,7 +6,7 @@ dependencies:
       - degov_media_address
   module:
     - geofield
-    - media_entity
+    - media
 id: media.field_address_location
 field_name: field_address_location
 entity_type: media

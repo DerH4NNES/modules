@@ -3,11 +3,10 @@ status: true
 dependencies:
   config:
     - field.storage.media.field_title
-    - media_entity.bundle.gallery
+    - media.type.gallery
   enforced:
     module:
       - degov_media_gallery
-third_party_settings: {  }
 id: media.gallery.field_title
 field_name: field_title
 entity_type: media

@@ -3,21 +3,21 @@ status: true
 dependencies:
   config:
     - core.entity_form_mode.media.media_browser
-    - entity_browser.browser.media_browser
-    - field.field.media.gallery.field_gallery_images
     - field.field.media.gallery.field_description
+    - field.field.media.gallery.field_gallery_images
     - field.field.media.gallery.field_gallery_title
     - field.field.media.gallery.field_include_search
+    - field.field.media.gallery.field_media_generic_5
     - field.field.media.gallery.field_media_in_library
     - field.field.media.gallery.field_tags
     - field.field.media.gallery.field_title
-    - media_entity.bundle.gallery
+    - media.type.gallery
   enforced:
     module:
       - degov_media_gallery
   module:
-    - entity_browser
     - field_group
+    - path
     - text
     - workbench_moderation
 third_party_settings:
@@ -88,20 +88,6 @@ targetEntityType: media
 bundle: gallery
 mode: media_browser
 content:
-  field_gallery_images:
-    type: entity_browser_entity_reference
-    weight: 12
-    settings:
-      entity_browser: media_browser
-      field_widget_display: rendered_entity
-      field_widget_edit: true
-      field_widget_remove: true
-      selection_mode: selection_append
-      field_widget_display_settings:
-        view_mode: thumbnail
-      open: true
-    region: content
-    third_party_settings: {  }
   field_description:
     weight: 12
     settings:
@@ -141,11 +127,20 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   langcode:
     type: language_select
     weight: 5
     region: content
-    settings: {  }
+    settings:
+      include_locked: true
     third_party_settings: {  }
   name:
     type: string_textfield
@@ -155,20 +150,21 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_title:
-    weight: 1
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
   path:
     type: path
     weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 100
+    region: content
+    third_party_settings: {  }
 hidden:
   created: true
+  field_gallery_images: true
+  field_media_generic_5: true
   uid: true

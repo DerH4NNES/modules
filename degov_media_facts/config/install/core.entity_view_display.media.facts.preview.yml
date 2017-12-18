@@ -8,12 +8,12 @@ dependencies:
     - field.field.media.facts.field_facts_text
     - field.field.media.facts.field_media_in_library
     - field.field.media.facts.field_title
-    - media_entity.bundle.facts
-  module:
-    - text
+    - media.type.facts
   enforced:
     module:
       - degov_media_facts
+  module:
+    - text
 id: media.facts.preview
 targetEntityType: media
 bundle: facts

@@ -5,7 +5,7 @@ dependencies:
     module:
       - degov_content_types_shared_fields
   module:
-    - media_entity
+    - media
     - taxonomy
 id: media.field_copyright
 field_name: field_copyright

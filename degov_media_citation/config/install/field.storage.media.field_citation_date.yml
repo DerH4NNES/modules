@@ -6,7 +6,7 @@ dependencies:
       - degov_media_citation
   module:
     - datetime
-    - media_entity
+    - media
 id: media.field_citation_date
 field_name: field_citation_date
 entity_type: media

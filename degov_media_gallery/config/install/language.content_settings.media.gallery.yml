@@ -2,7 +2,7 @@ langcode: de
 status: true
 dependencies:
   config:
-    - media_entity.bundle.gallery
+    - media.type.gallery
   enforced:
     module:
       - degov_media_gallery

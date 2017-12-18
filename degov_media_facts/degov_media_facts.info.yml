@@ -10,6 +10,10 @@ dependencies:
   - field
   - field_group
   - language
+  - media
   - media_entity
+  - media_entity_generic
+  - path
   - taxonomy
   - text
+  - workbench_moderation

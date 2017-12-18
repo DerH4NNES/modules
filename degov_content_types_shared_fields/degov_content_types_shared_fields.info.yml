@@ -10,6 +10,7 @@ dependencies:
   - field_group
   - lightning_core
   - link
+  - media
   - media_entity
   - node
   - paragraphs
@@ -18,3 +19,5 @@ dependencies:
   - taxonomy
   - text
   - twig_field_value
+  - user
+  - views

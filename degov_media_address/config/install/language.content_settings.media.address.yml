@@ -2,7 +2,7 @@ langcode: de
 status: true
 dependencies:
   config:
-    - media_entity.bundle.address
+    - media.type.address
   enforced:
     module:
       - degov_media_address

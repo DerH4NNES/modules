@@ -5,7 +5,7 @@ dependencies:
     module:
       - degov_media_gallery
   module:
-    - media_entity
+    - media
 id: media.field_gallery_title
 field_name: field_gallery_title
 entity_type: media

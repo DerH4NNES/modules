@@ -3,11 +3,10 @@ status: true
 dependencies:
   config:
     - field.storage.media.field_title
-    - media_entity.bundle.audio
+    - media.type.audio
   enforced:
     module:
       - degov_media_audio
-third_party_settings: {  }
 id: media.audio.field_title
 field_name: field_title
 entity_type: media

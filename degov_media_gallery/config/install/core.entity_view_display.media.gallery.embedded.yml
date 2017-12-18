@@ -11,12 +11,11 @@ dependencies:
     - field.field.media.gallery.field_tags
     - field.field.media.gallery.field_title
     - image.style.thumbnail
-    - media_entity.bundle.gallery
+    - media.type.gallery
   enforced:
     module:
       - degov_media_gallery
   module:
-    - degov_common
     - image
     - text
 id: media.gallery.embedded
@@ -24,6 +23,13 @@ targetEntityType: media
 bundle: gallery
 mode: embedded
 content:
+  field_description:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
   field_title:
     weight: 0
     label: above
@@ -31,13 +37,6 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-    region: content
-  field_description:
-    weight: 2
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
     region: content
   thumbnail:
     type: image
@@ -51,8 +50,8 @@ content:
 hidden:
   created: true
   field_gallery_images: true
-  field_gallery_title: true
   field_gallery_text: true
+  field_gallery_title: true
   field_include_search: true
   field_media_in_library: true
   field_tags: true

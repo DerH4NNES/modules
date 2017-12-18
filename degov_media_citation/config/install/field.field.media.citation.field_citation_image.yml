@@ -3,8 +3,8 @@ status: true
 dependencies:
   config:
     - field.storage.media.field_citation_image
-    - media_entity.bundle.citation
-    - media_entity.bundle.image
+    - media.type.citation
+    - media.type.image
   enforced:
     module:
       - degov_media_citation

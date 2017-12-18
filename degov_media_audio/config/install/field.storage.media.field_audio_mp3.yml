@@ -6,7 +6,7 @@ dependencies:
       - degov_media_audio
   module:
     - file
-    - media_entity
+    - media
 id: media.field_audio_mp3
 field_name: field_audio_mp3
 entity_type: media

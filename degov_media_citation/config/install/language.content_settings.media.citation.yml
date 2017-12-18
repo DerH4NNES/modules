@@ -2,7 +2,7 @@ langcode: de
 status: true
 dependencies:
   config:
-    - media_entity.bundle.citation
+    - media.type.citation
   enforced:
     module:
       - degov_media_citation

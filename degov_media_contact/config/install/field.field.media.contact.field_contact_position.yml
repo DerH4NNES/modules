@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - field.storage.media.field_contact_position
-    - media_entity.bundle.contact
+    - media.type.contact
   enforced:
     module:
       - degov_media_contact

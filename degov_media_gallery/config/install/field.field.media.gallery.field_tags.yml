@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - field.storage.media.field_tags
-    - media_entity.bundle.gallery
+    - media.type.gallery
     - taxonomy.vocabulary.tags
   enforced:
     module:

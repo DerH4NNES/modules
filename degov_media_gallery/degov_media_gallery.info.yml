@@ -6,11 +6,13 @@ package: deGov
 dependencies:
   - degov_common
   - degov_content_types_shared_fields
+  - degov_taxonomy_term_tags
   - entity_browser
   - field
   - field_group
   - image
   - language
+  - media
   - media_entity
   - path
   - text

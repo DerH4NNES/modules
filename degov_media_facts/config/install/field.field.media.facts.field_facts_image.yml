@@ -3,8 +3,8 @@ status: true
 dependencies:
   config:
     - field.storage.media.field_facts_image
-    - media_entity.bundle.facts
-    - media_entity.bundle.image
+    - media.type.facts
+    - media.type.image
   enforced:
     module:
       - degov_media_facts

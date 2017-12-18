@@ -17,7 +17,9 @@ dependencies:
   - geofield
   - language
   - lightning_core
+  - media
   - media_entity
+  - media_entity_generic
   - path
   - spamspan
   - styled_google_map

@@ -2,7 +2,7 @@ langcode: de
 status: true
 dependencies:
   module:
-    - media_entity
+    - media
 id: media.field_allow_download
 field_name: field_allow_download
 entity_type: media

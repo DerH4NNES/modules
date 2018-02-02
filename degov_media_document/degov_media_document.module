@@ -7,7 +7,7 @@ use Drupal\degov_common\Common;
  */
 function degov_media_document_preprocess(&$variables, $hook, &$info) {
   if ($hook === 'media') {
-    /* @var \Drupal\media_entity\Entity\Media $media */
+    /* @var \Drupal\media\Entity\Media $media */
     $media = $variables['elements']['#media'];
 
     if ($media->bundle() === 'document') {

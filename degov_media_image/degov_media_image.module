@@ -19,7 +19,7 @@ function degov_media_image_preprocess(&$variables, $hook, &$info) {
  * Implements hook_preprocess_type().
  */
 function degov_media_image_preprocess_media__image(&$variables) {
-  /** @var Drupal\media_entity\Entity\Media $media */
+  /** @var Drupal\media\Entity\Media $media */
   $media = $variables['elements']['#media'];
   $variables['created'] = $media->created->value;
   $variables['image_url'] = $media->url();
@@ -27,7 +27,7 @@ function degov_media_image_preprocess_media__image(&$variables) {
   // Add the download link only to full view mode.
   if (in_array($variables['elements']['#view_mode'], ['full', 'default'])) {
     // Add media type name to display.
-    $bundle_definition = $media->getType()->getPluginDefinition();
+    $bundle_definition = $media->getSource()->getPluginDefinition();
     $variables['content']['media_type_label'] = $bundle_definition['label'];
     // Check if the download of the video is allowed by media settings.
     $download_is_allowed = FALSE;

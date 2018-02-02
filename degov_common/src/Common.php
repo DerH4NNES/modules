@@ -115,9 +115,9 @@ class Common {
     extract($options);
     // Retrieve the bundle name of the entity type.
     $entity_bundle_name = 'type';
-    if ($entity_type == 'media') {
-      $entity_bundle_name = 'bundle';
-    }
+    #if ($entity_type == 'media') {
+    #  $entity_bundle_name = 'bundle';
+    #}
     if ($entity_type == 'paragraph') {
       // TODO: There is still a problem with orphaned paragraph references.
       //       Although the paragraph has been removed, the references (on the node) still exist.

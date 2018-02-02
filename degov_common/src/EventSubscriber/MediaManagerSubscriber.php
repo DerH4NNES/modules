@@ -40,7 +40,7 @@ class MediaManagerSubscriber implements EventSubscriberInterface {
     $media = $request->attributes->get('media');
 
     // Check if the user tries to access the media canonical route.
-    if ($route === 'entity.media.canonical' && $media instanceof MediaInterface && $media->hasField('field_include_search') && $media->field_include_search->value === '0' && !$this->currentUser->hasPermission('access media overview')) {
+    if ($route === 'entity.media.canonical' && $media instanceof MediaInterface && $media->hasField('field_include_search') && $media->field_include_search->value === '0' ) {
       // Redirect the user to the front page with status 403 if the media is not
       // for search and user has no permissions to access.
       $url = Url::fromRoute('<front>');

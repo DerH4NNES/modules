@@ -4,7 +4,7 @@ namespace Drupal\degov_common\Plugin\views\field;
 
 
 use Drupal\entity_reference_integrity\EntityReferenceDependencyManagerInterface;
-use Drupal\media_entity\MediaInterface;
+use Drupal\media\MediaInterface;
 use Drupal\views\Plugin\views\field\FieldPluginBase;
 use Drupal\views\ResultRow;
 use Symfony\Component\DependencyInjection\ContainerInterface;

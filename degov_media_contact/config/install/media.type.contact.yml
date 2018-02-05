@@ -4,11 +4,14 @@ dependencies:
   enforced:
     module:
       - degov_media_contact
+  module:
+    - media_entity_generic
 id: contact
 label: Kontakt
 description: 'Dient der Erstellung einer Kontaktperson/-stelle.'
-type: generic
+source: generic
 queue_thumbnail_downloads: false
 new_revision: false
-type_configuration: {  }
+source_configuration:
+  source_field: field_media_generic_3
 field_map: {  }

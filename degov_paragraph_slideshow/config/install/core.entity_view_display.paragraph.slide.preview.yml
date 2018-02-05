@@ -14,7 +14,7 @@ dependencies:
       - degov_paragraph_slideshow
   module:
     - link
-    - media_entity
+    - media
     - text
 id: paragraph.slide.preview
 targetEntityType: paragraph

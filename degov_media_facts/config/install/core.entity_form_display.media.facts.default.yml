@@ -6,16 +6,19 @@ dependencies:
     - field.field.media.facts.field_facts_fact
     - field.field.media.facts.field_facts_image
     - field.field.media.facts.field_facts_text
+    - field.field.media.facts.field_media_generic_4
     - field.field.media.facts.field_media_in_library
     - field.field.media.facts.field_title
-    - media_entity.bundle.facts
-  module:
-    - entity_browser
-    - field_group
-    - text
+    - media.type.facts
   enforced:
     module:
       - degov_media_facts
+  module:
+    - entity_browser
+    - field_group
+    - path
+    - text
+    - workbench_moderation
 third_party_settings:
   field_group:
     group_vertical:
@@ -116,7 +119,8 @@ content:
     type: language_select
     weight: 25
     region: content
-    settings: {  }
+    settings:
+      include_locked: true
     third_party_settings: {  }
   name:
     type: string_textfield
@@ -126,6 +130,20 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 100
+    region: content
+    third_party_settings: {  }
 hidden:
   created: true
+  field_media_generic_4: true
   uid: true

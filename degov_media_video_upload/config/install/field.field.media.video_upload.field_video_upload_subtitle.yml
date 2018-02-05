@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - field.storage.media.field_video_upload_subtitle
-    - media_entity.bundle.video_upload
+    - media.type.video_upload
     - paragraphs.paragraphs_type.video_subtitle
   enforced:
     module:

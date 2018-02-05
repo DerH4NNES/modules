@@ -2,6 +2,7 @@ langcode: de
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.search
     - field.field.media.citation.field_citation_date
     - field.field.media.citation.field_citation_image
     - field.field.media.citation.field_citation_text
@@ -12,7 +13,7 @@ dependencies:
     - field.field.media.citation.field_title
     - image.style.large
     - image.style.thumbnail
-    - media_entity.bundle.citation
+    - media.type.citation
   enforced:
     module:
       - degov_media_citation
@@ -20,7 +21,7 @@ dependencies:
     - datetime
     - degov_common
     - image
-    - media_entity
+    - media
 id: media.citation.search
 targetEntityType: media
 bundle: citation

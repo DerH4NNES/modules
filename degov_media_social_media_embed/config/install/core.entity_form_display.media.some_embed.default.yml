@@ -3,16 +3,19 @@ status: true
 dependencies:
   config:
     - field.field.media.some_embed.field_include_search
+    - field.field.media.some_embed.field_media_generic_7
     - field.field.media.some_embed.field_media_in_library
+    - field.field.media.some_embed.field_social_media_source
     - field.field.media.some_embed.field_some_embed_code
     - field.field.media.some_embed.field_tags
     - field.field.media.some_embed.field_title
-    - media_entity.bundle.some_embed
+    - media.type.some_embed
   enforced:
     module:
       - degov_media_social_media_embed
   module:
     - field_group
+    - path
     - workbench_moderation
 third_party_settings:
   field_group:
@@ -50,6 +53,7 @@ third_party_settings:
     group_code:
       children:
         - field_some_embed_code
+        - field_social_media_source
       parent_name: group_vertical
       weight: 20
       format_type: tab
@@ -81,6 +85,12 @@ content:
     weight: 5
     third_party_settings: {  }
     region: content
+  field_social_media_source:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_some_embed_code:
     weight: 2
     settings:
@@ -98,11 +108,20 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
+  field_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   langcode:
     type: language_select
     weight: 2
     region: content
-    settings: {  }
+    settings:
+      include_locked: true
     third_party_settings: {  }
   name:
     type: string_textfield
@@ -112,14 +131,20 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_title:
-    weight: 1
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
+  path:
+    type: path
+    weight: 30
     region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 100
+    region: content
+    third_party_settings: {  }
 hidden:
   created: true
+  field_media_generic_7: true
   uid: true

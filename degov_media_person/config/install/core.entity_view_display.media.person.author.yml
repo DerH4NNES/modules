@@ -2,22 +2,23 @@ langcode: de
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.author
     - field.field.media.person.field_include_search
     - field.field.media.person.field_media_in_library
     - field.field.media.person.field_person_image
     - field.field.media.person.field_person_info
     - field.field.media.person.field_tags
     - field.field.media.person.field_title
-    - image.style.medium
+    - image.style.large
     - image.style.thumbnail
-    - media_entity.bundle.person
+    - media.type.person
   enforced:
     module:
       - degov_media_person
   module:
     - degov_common
     - image
-    - media_entity
+    - media
     - text
     - user
 id: media.person.author

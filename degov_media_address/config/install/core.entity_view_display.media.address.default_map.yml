@@ -12,7 +12,7 @@ dependencies:
     - field.field.media.address.field_include_search
     - field.field.media.address.field_media_in_library
     - field.field.media.address.field_title
-    - media_entity.bundle.address
+    - media.type.address
   enforced:
     module:
       - degov_media_address

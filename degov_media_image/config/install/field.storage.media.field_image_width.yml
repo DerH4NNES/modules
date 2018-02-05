@@ -5,7 +5,7 @@ dependencies:
     module:
       - degov_media_image
   module:
-    - media_entity
+    - media
 id: media.field_image_width
 field_name: field_image_width
 entity_type: media

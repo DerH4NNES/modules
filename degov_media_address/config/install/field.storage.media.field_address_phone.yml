@@ -5,7 +5,7 @@ dependencies:
     module:
       - degov_media_address
   module:
-    - media_entity
+    - media
 id: media.field_address_phone
 field_name: field_address_phone
 entity_type: media

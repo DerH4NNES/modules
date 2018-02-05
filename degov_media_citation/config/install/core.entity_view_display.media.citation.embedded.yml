@@ -11,16 +11,10 @@ dependencies:
     - field.field.media.citation.field_media_in_library
     - field.field.media.citation.field_tags
     - field.field.media.citation.field_title
-    - image.style.thumbnail
-    - media_entity.bundle.citation
+    - media.type.citation
   enforced:
     module:
       - degov_media_citation
-  module:
-    - datetime
-    - degov_common
-    - image
-    - media_entity
 id: media.citation.embedded
 targetEntityType: media
 bundle: citation

@@ -259,12 +259,14 @@ function degov_common_form_menu_link_content_menu_link_content_form_alter(array 
  */
 function degov_common_entity_type_alter(array &$entity_types) {
   // Try to set the class for Media edit form from degov_common module to force thumbnail regeneration.
-  $entity_type = $entity_types['media'];
-  $replacement_class = DegovMediaForm::class;
-  if (get_parent_class($replacement_class) == $entity_type->getFormClass('edit')) {
-    $entity_type->setFormClass('edit', $replacement_class);
+  if (isset($entity_types['media'])) {
+    $entity_type = $entity_types['media'];
+    $replacement_class = DegovMediaForm::class;
+    if (get_parent_class($replacement_class) == $entity_type->getFormClass('edit')) {
+      $entity_type->setFormClass('edit', $replacement_class);
+    }
+    $entity_type->setLabelCallback('degov_media_label_callback');
   }
-  $entity_type->setLabelCallback('degov_media_label_callback');
 }
 
 /**

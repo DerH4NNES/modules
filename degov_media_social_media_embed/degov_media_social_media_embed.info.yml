@@ -12,6 +12,7 @@ dependencies:
   - field_group
   - language
   - media
+  - media_entity_generic
   - path
   - taxonomy
   - text

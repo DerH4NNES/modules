@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - field.storage.media.field_copyright
-    - media_entity.bundle.video_upload
+    - media.type.video_upload
     - taxonomy.vocabulary.copyright
   enforced:
     module:

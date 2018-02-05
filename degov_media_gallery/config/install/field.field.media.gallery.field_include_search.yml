@@ -3,12 +3,12 @@ status: true
 dependencies:
   config:
     - field.storage.media.field_include_search
-    - media_entity.bundle.gallery
+    - media.type.gallery
 id: media.gallery.field_include_search
 field_name: field_include_search
 entity_type: media
 bundle: gallery
-label: 'Mediathek'
+label: Mediathek
 description: ''
 required: false
 translatable: true

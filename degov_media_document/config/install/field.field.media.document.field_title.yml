@@ -3,11 +3,10 @@ status: true
 dependencies:
   config:
     - field.storage.media.field_title
-    - media_entity.bundle.document
+    - media.type.document
   enforced:
     module:
       - degov_media_document
-third_party_settings: {  }
 id: media.document.field_title
 field_name: field_title
 entity_type: media

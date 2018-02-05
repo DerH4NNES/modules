@@ -3,11 +3,10 @@ status: true
 dependencies:
   config:
     - field.storage.media.field_title
-    - media_entity.bundle.video_upload
+    - media.type.video_upload
   enforced:
     module:
       - degov_media_video_upload
-third_party_settings: {  }
 id: media.video_upload.field_title
 field_name: field_title
 entity_type: media

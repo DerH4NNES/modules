@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - field.storage.media.field_tags
-    - media_entity.bundle.document
+    - media.type.document
     - taxonomy.vocabulary.tags
   enforced:
     module:

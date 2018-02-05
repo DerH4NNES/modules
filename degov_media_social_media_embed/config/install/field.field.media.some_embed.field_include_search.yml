@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - field.storage.media.field_include_search
-    - media_entity.bundle.some_embed
+    - media.type.some_embed
   enforced:
     module:
       - degov_media_social_media_embed
@@ -11,7 +11,7 @@ id: media.some_embed.field_include_search
 field_name: field_include_search
 entity_type: media
 bundle: some_embed
-label: 'Mediathek'
+label: Mediathek
 description: ''
 required: false
 translatable: true

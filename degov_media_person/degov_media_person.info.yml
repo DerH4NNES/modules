@@ -11,6 +11,7 @@ dependencies:
   - field
   - field_group
   - image
+  - lightning_core
   - media
   - path
   - taxonomy

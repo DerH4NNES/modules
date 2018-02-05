@@ -6,7 +6,7 @@ dependencies:
       - degov_media_video_upload
   module:
     - file
-    - media_entity
+    - media
 id: media.field_video_upload_mp4
 field_name: field_video_upload_mp4
 entity_type: media

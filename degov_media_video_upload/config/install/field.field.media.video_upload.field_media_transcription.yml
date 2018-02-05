@@ -3,12 +3,12 @@ status: true
 dependencies:
   config:
     - field.storage.media.field_media_transcription
-    - media_entity.bundle.video_upload
-  module:
-    - text
+    - media.type.video_upload
   enforced:
     module:
       - degov_media_video_upload
+  module:
+    - text
 id: media.video_upload.field_media_transcription
 field_name: field_media_transcription
 entity_type: media

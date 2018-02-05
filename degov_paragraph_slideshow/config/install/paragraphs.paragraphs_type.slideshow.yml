@@ -6,4 +6,6 @@ dependencies:
       - degov_paragraph_slideshow
 id: slideshow
 label: Slideshow
+icon_uuid: null
+description: null
 behavior_plugins: {  }

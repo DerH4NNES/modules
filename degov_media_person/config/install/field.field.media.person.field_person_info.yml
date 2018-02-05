@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - field.storage.media.field_person_info
-    - media_entity.bundle.person
+    - media.type.person
   enforced:
     module:
       - degov_media_person

@@ -3,11 +3,11 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_media_reference_media
-    - media_entity.bundle.document
-    - media_entity.bundle.image
-    - media_entity.bundle.instagram
-    - media_entity.bundle.tweet
-    - media_entity.bundle.video
+    - media.type.document
+    - media.type.image
+    - media.type.instagram
+    - media.type.tweet
+    - media.type.video
     - paragraphs.paragraphs_type.media_reference
   enforced:
     module:
@@ -26,11 +26,20 @@ settings:
   handler: 'default:media'
   handler_settings:
     target_bundles:
+      address: address
+      audio: audio
+      citation: citation
+      contact: contact
       document: document
+      facts: facts
+      gallery: gallery
       image: image
       instagram: instagram
+      person: person
+      some_embed: some_embed
       tweet: tweet
       video: video
+      video_upload: video_upload
     sort:
       field: _none
     auto_create: false

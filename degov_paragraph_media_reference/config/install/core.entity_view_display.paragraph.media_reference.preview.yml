@@ -4,6 +4,7 @@ dependencies:
   config:
     - core.entity_view_mode.paragraph.preview
     - field.field.paragraph.media_reference.field_media_reference_media
+    - field.field.paragraph.media_reference.field_media_reference_view_mode
     - field.field.paragraph.media_reference.field_override_caption
     - field.field.paragraph.media_reference.field_sub_title
     - field.field.paragraph.media_reference.field_title
@@ -51,4 +52,5 @@ content:
     type: string
     region: content
 hidden:
+  field_media_reference_view_mode: true
   field_title_link: true

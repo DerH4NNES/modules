@@ -6,7 +6,7 @@ dependencies:
       - degov_media_image
   module:
     - datetime
-    - media_entity
+    - media
 id: media.field_image_date
 field_name: field_image_date
 entity_type: media

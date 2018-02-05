@@ -3,12 +3,9 @@ status: true
 dependencies:
   config:
     - field.storage.media.field_media_transcription
-    - media_entity.bundle.audio
+    - media.type.audio
   module:
     - text
-  endforced:
-    module:
-      - degov_media_audio
 id: media.audio.field_media_transcription
 field_name: field_media_transcription
 entity_type: media

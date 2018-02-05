@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - field.storage.media.field_include_search
-    - media_entity.bundle.contact
+    - media.type.contact
   enforced:
     module:
       - degov_media_contact
@@ -11,7 +11,7 @@ id: media.contact.field_include_search
 field_name: field_include_search
 entity_type: media
 bundle: contact
-label: 'Mediathek'
+label: Mediathek
 description: ''
 required: false
 translatable: true

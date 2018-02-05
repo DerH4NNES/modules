@@ -5,7 +5,7 @@ dependencies:
     module:
       - degov_media_contact
   module:
-    - media_entity
+    - media
 id: media.field_contact_tel
 field_name: field_contact_tel
 entity_type: media

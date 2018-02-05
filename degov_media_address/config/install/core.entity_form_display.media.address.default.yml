@@ -9,10 +9,11 @@ dependencies:
     - field.field.media.address.field_address_phone
     - field.field.media.address.field_address_title
     - field.field.media.address.field_include_search
+    - field.field.media.address.field_media_generic
     - field.field.media.address.field_media_in_library
     - field.field.media.address.field_tags
     - field.field.media.address.field_title
-    - media_entity.bundle.address
+    - media.type.address
   enforced:
     module:
       - degov_media_address
@@ -20,6 +21,7 @@ dependencies:
     - address
     - field_group
     - geofield
+    - path
     - workbench_moderation
 third_party_settings:
   field_group:
@@ -161,11 +163,20 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
+  field_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   langcode:
     type: language_select
     weight: 19
     region: content
-    settings: {  }
+    settings:
+      include_locked: true
     third_party_settings: {  }
   name:
     type: string_textfield
@@ -175,20 +186,20 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_title:
-    weight: 1
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
   path:
     type: path
     weight: 23
     region: content
     settings: {  }
     third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 100
+    region: content
+    third_party_settings: {  }
 hidden:
   created: true
+  field_media_generic: true
   uid: true

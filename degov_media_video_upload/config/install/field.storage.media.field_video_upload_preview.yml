@@ -5,7 +5,7 @@ dependencies:
     module:
       - degov_media_video_upload
   module:
-    - media_entity
+    - media
 id: media.field_video_upload_preview
 field_name: field_video_upload_preview
 entity_type: media

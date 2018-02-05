@@ -5,7 +5,7 @@ dependencies:
     module:
       - degov_paragraph_media_reference
   module:
-    - media_entity
+    - media
     - paragraphs
 id: paragraph.field_media_reference_media
 field_name: field_media_reference_media

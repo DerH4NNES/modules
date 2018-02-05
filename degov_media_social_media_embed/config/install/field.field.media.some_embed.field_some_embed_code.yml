@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - field.storage.media.field_some_embed_code
-    - media_entity.bundle.some_embed
+    - media.type.some_embed
   enforced:
     module:
       - degov_media_social_media_embed

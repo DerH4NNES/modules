@@ -3,11 +3,10 @@ status: true
 dependencies:
   config:
     - field.storage.media.field_title
-    - media_entity.bundle.tweet
+    - media.type.tweet
   enforced:
     module:
       - degov_media_tweet
-third_party_settings: {  }
 id: media.tweet.field_title
 field_name: field_title
 entity_type: media

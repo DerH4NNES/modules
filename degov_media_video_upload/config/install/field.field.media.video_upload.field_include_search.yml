@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - field.storage.media.field_include_search
-    - media_entity.bundle.video_upload
+    - media.type.video_upload
   enforced:
     module:
       - degov_media_video_upload
@@ -11,7 +11,7 @@ id: media.video_upload.field_include_search
 field_name: field_include_search
 entity_type: media
 bundle: video_upload
-label: 'Mediathek'
+label: Mediathek
 description: ''
 required: false
 translatable: true

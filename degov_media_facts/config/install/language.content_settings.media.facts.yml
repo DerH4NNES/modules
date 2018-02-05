@@ -2,7 +2,7 @@ langcode: de
 status: true
 dependencies:
   config:
-    - media_entity.bundle.facts
+    - media.type.facts
   enforced:
     module:
       - degov_media_facts

@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - field.storage.media.field_video_upload_webm
-    - media_entity.bundle.video_upload
+    - media.type.video_upload
   enforced:
     module:
       - degov_media_video_upload

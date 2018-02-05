@@ -3,8 +3,13 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.media.preview
+    - media.type.audio
+    - media.type.gallery
+    - media.type.image
+    - media.type.video
+    - media.type.video_upload
   module:
-    - media_entity
+    - media
     - user
 id: latest_media
 label: 'Neuste Medien'

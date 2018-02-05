@@ -6,7 +6,7 @@ dependencies:
       - degov_media_video_upload
   module:
     - entity_reference_revisions
-    - media_entity
+    - media
     - paragraphs
 id: media.field_video_upload_subtitle
 field_name: field_video_upload_subtitle

@@ -13,7 +13,7 @@ dependencies:
     - field.field.media.address.field_media_in_library
     - field.field.media.address.field_tags
     - field.field.media.address.field_title
-    - media_entity.bundle.address
+    - media.type.address
   enforced:
     module:
       - degov_media_address
@@ -26,14 +26,6 @@ targetEntityType: media
 bundle: address
 mode: embedded
 content:
-  field_title:
-    weight: 0
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
   field_address_address:
     weight: 1
     label: hidden
@@ -87,6 +79,14 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
 hidden:
   created: true
   field_address_location: true

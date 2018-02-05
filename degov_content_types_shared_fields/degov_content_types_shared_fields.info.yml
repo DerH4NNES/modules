@@ -18,3 +18,5 @@ dependencies:
   - taxonomy
   - text
   - twig_field_value
+  - user
+  - views

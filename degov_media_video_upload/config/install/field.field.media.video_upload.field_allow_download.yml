@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - field.storage.media.field_allow_download
-    - media_entity.bundle.video_upload
+    - media.type.video_upload
 id: media.video_upload.field_allow_download
 field_name: field_allow_download
 entity_type: media

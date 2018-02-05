@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - field.storage.media.field_citation_text
-    - media_entity.bundle.citation
+    - media.type.citation
   enforced:
     module:
       - degov_media_citation

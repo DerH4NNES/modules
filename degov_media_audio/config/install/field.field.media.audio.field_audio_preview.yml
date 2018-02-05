@@ -3,8 +3,8 @@ status: true
 dependencies:
   config:
     - field.storage.media.field_audio_preview
-    - media_entity.bundle.image
-    - media_entity.bundle.audio
+    - media.type.audio
+    - media.type.image
   enforced:
     module:
       - degov_media_audio

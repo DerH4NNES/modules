@@ -5,7 +5,7 @@ dependencies:
     module:
       - degov_content_types_shared_fields
   module:
-    - media_entity
+    - media
     - text
 id: media.field_description
 field_name: field_description

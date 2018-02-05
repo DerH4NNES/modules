@@ -8,6 +8,7 @@ dependencies:
   - degov_content_types_shared_fields
   - degov_taxonomy_term_copyright
   - degov_taxonomy_term_tags
+  - dropzonejs_eb_widget
   - entity_browser
   - entity_reference_revisions
   - field
@@ -16,6 +17,7 @@ dependencies:
   - language
   - media
   - paragraphs
+  - path
   - taxonomy
+  - text
   - workbench_moderation
-  - dropzonejs_eb_widget

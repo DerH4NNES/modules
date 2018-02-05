@@ -10,14 +10,14 @@ dependencies:
     - field.field.media.person.field_title
     - image.style.medium
     - image.style.thumbnail
-    - media_entity.bundle.person
+    - media.type.person
   enforced:
     module:
       - degov_media_person
   module:
     - degov_common
     - image
-    - media_entity
+    - media
     - text
     - user
 id: media.person.default

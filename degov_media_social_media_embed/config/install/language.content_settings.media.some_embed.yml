@@ -2,7 +2,7 @@ langcode: de
 status: true
 dependencies:
   config:
-    - media_entity.bundle.some_embed
+    - media.type.some_embed
   enforced:
     module:
       - degov_media_social_media_embed

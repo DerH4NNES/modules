@@ -11,7 +11,7 @@ dependencies:
   - field
   - inline_entity_form
   - link
-  - media_entity
+  - media
   - options
   - paragraphs
   - text

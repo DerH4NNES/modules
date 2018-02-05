@@ -10,7 +10,7 @@ dependencies:
   - field_group
   - lightning_core
   - link
-  - media_entity
+  - media
   - node
   - paragraphs
   - paragraphs_edit

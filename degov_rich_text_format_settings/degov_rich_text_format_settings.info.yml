@@ -10,6 +10,6 @@ dependencies:
   - entity_embed
   - filter
   - linkit
-  - media_entity
+  - media
   - node
   - spamspan

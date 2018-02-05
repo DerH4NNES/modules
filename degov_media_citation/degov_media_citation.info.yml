@@ -14,7 +14,7 @@ dependencies:
   - file
   - image
   - language
-  - media_entity
+  - media
   - taxonomy
   - user
   - workbench_moderation

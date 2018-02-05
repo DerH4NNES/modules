@@ -11,7 +11,7 @@ dependencies:
   - field
   - image
   - language
-  - media_entity
+  - media
   - taxonomy
   - video_embed_field
   - video_embed_media

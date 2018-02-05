@@ -10,6 +10,6 @@ dependencies:
   - field
   - field_group
   - language
-  - media_entity
+  - media
   - taxonomy
   - text

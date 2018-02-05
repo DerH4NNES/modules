@@ -10,8 +10,8 @@ dependencies:
   - entity_browser
   - field
   - image
-  - media_entity
-  - media_entity_twitter
+  - media
+  - media_twitter
   - path
   - taxonomy
   - text

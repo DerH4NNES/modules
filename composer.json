@@ -9,9 +9,7 @@
   },
   "extra": {
     "merge-plugin": {
-      "merge-extra": true,
-      "merge-extra-deep": true,
-      "include": [
+      "require": [
         "./*/composer.json"
       ]
     }

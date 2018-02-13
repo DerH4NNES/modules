@@ -1,24 +1,137 @@
 {
   "name": "degov/modules",
   "description": "deGov - Modules",
-  "license": "GPL-3.0+",
+  "license": "GPL-2.0+",
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require": {
-    "wikimedia/composer-merge-plugin": "dev-master"
+    "drupal/easy_breadcrumb": "~1.6",
+    "drupal/config_rewrite": "^1.0",
+    "drupal/twig_field_value": "^1.1",
+    "drupal/field_group": "3.x-dev",
+    "drupal/paragraphs_edit": "2.x-dev",
+    "kenwheeler/slick": "1.7.1",
+    "zenopopovici/DoubleTapToGo": "0.3",
+    "drupal/entity_reference_integrity_enforce": "^1.0@RC",
+    "drupal/entity_reference_integrity": "^1.0@RC",
+    "drupal/shariff": "^1.0",
+    "drupal/paragraphs": "^1.2",
+    "drupal/eu_cookie_compliance": "^1.0@beta",
+    "drupal/swiftmailer": "^1.0-beta1",
+    "drupal/mailsystem": "^4.1",
+    "drupal/address": "^1.0",
+    "drupal/styled_google_map": "^1.2",
+    "drupal/system_stream_wrapper": "^1.0-alpha2",
+    "drupal/geocoder": "^2.0-alpha5",
+    "php-coord/php-coord": "^2.1",
+    "leaflet/leaflet": "1.1.0",
+    "drupal/dropzonejs": "^2.0.0",
+    "enyo/dropzone": "4.2.0",
+    "phansys/getid3": "^2.1@dev",
+    "drupal/metatag": "^1.1",
+    "drupal/token": "*",
+    "drupal/date_popup": "^1.0",
+    "drupal/calendar": "1.x-dev",
+    "drupal/block_field": "^1.0.0",
+    "drupal/viewsreference": "^1.0",
+    "drupal/password_policy": "^3.0.0",
+    "drupal/redirect": "^1.0.0",
+    "drupal/restrict_ip": "^1.0",
+    "drupal/facets": "^1.0@beta",
+    "drupal/search_api": "^1.2",
+    "drupal/search_api_sorts": "^1.0@beta",
+    "drupal/simplenews": "^1.0",
+    "drupal/simple_sitemap": "^2.9",
+    "drupal/sitemap": "^1.3",
+    "drupal/role_delegation": "^1.0.0",
+    "drupal/workbench": "^1.0",
+    "drupal/workbench_access": "^1.0"
   },
-    "extra": {
-        "merge-plugin": {
-            "include": [
-                "./*/composer.json"
-            ],
-            "recurse": true,
-            "replace": false,
-            "ignore-duplicates": true,
-            "merge-dev": true,
-            "merge-extra": false,
-            "merge-extra-deep": false,
-            "merge-scripts": true
+  "repositories": [
+    {
+      "type": "package",
+      "package": {
+        "name": "enyo/dropzone",
+        "version": "4.2.0",
+        "type": "drupal-library",
+        "source": {
+          "url": "https://github.com/enyo/dropzone",
+          "type": "git",
+          "reference": "origin/master"
         }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "heiseonline/shariff",
+        "version": "master",
+        "type": "drupal-library",
+        "dist": {
+          "url": "https://github.com/heiseonline/shariff/archive/master.zip",
+          "type": "zip"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "kenwheeler/slick",
+        "version": "1.7.1",
+        "type": "drupal-library",
+        "source": {
+          "type": "git",
+          "url": "https://github.com/kenwheeler/slick",
+          "reference": "master"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "zenopopovici/DoubleTapToGo",
+        "version": "0.3",
+        "type": "drupal-library",
+        "source": {
+          "type": "git",
+          "url": "https://github.com/zenopopovici/DoubleTapToGo",
+          "reference": "master"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "leaflet/leaflet",
+        "version": "1.1.0",
+        "type": "drupal-library",
+        "source": {
+          "type": "git",
+          "url": "https://github.com/Leaflet/Leaflet",
+          "reference": "a3a7e04"
+        }
+      }
     }
+  ],
+  "extra": {
+    "installer-paths": {
+      "docroot/modules/contrib/{$name}": [
+        "type:drupal-module"
+      ]
+    },
+    "patches": {
+      "drupal/shariff": {
+        "2881126 - two twitter popups: missing js & dependency issue": "https://www.drupal.org/files/issues/two_twitter_popups-2881126-6.patch"
+      },
+      "drupal/geocoder": {
+        "12126400 - No configuration page": "https://www.drupal.org/files/issues/api_keys_form_fixed.patch"
+      },
+      "drupal/calendar": {
+        "2845257 - Undefined index: id in calendar_views_data_alter": "https://www.drupal.org/files/issues/undefined_index-2845257-10.patch"
+      },
+      "drupal/restrict_ip": {
+        "2905569 - Avoid redirect loop for authenticated users": "https://www.drupal.org/files/issues/2905569_check_user_authentication.patch"
+      }
+    }
+  }
 }

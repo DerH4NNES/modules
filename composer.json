@@ -24,7 +24,7 @@
     "drupal/system_stream_wrapper": "^1.0-alpha2",
     "drupal/geocoder": "^2.0-alpha5",
     "php-coord/php-coord": "^2.1",
-    "leaflet/leaflet": "1.1.0#a3a7e04",
+    "leaflet/leaflet": "1.1.0",
     "drupal/dropzonejs": "^2.0.0",
     "enyo/dropzone": "4.2.0",
     "phansys/getid3": "^2.1@dev",
